@@ -28,7 +28,7 @@ Gem::Specification.new do |s|
     "sina.gemspec",
     "sina.yml.example"
   ]
-  s.homepage = %q{http://github.com/goshan/sina_weibo}
+  s.homepage = %q{https://github.com/goshan/SinaWeiboSDKGem}
   s.require_paths = ["lib"]
   s.rubygems_version = %q{1.3.7}
   s.summary = %q{a gem to help api integration for sina weibo (www.weibo.com)}

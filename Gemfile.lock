@@ -1,0 +1,18 @@
+GEM
+  remote: http://rubygems.org/
+  specs:
+    httparty (0.8.1)
+      multi_json
+      multi_xml
+    mime-types (1.19)
+    multi_json (1.0.4)
+    multi_xml (0.4.1)
+    rest-client (1.6.7)
+      mime-types (>= 1.16)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  httparty
+  rest-client

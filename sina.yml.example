@@ -1,0 +1,9 @@
+development:
+  app_key: app_key
+  scret_key: scret_key
+test``:
+  app_key: app_key
+  scret_key: scret_key
+production:
+  app_key: app_key
+  scret_key: scret_key

@@ -1,0 +1,19 @@
+
+A third party, non-official sina weibo API gem created by goshan. Inspired by huangxiangdan's renren API gem.
+
+To install the gem simply enter:
+
+  gem install sina
+
+This is a minimalistic API implementation, where all function calls goes through a single method. For example to publish a feed item one might do the following:
+
+  param = {:uid => "blahblah"}
+  sina = Sina::Base.new(token)
+  sina.call_method("users/show", param)
+
+the token should be got by yourself
+    
+This gem was made in the process of creating 一见关注 [http://easyfollow.com], please take a moment and go and check out that project for example usage.
+
+== Sites using the renren gem
+easyFollow http://easyfollow.com

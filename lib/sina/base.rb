@@ -14,11 +14,16 @@ module Sina
       @access_token = access_token
     end
     
-    def call_method(function = "users/show", params)
+    def call_method(type, function = "users/show", params)
       url = URI.parse("https://api.weibo.com/2/#{function}.json")
       http = Net::HTTP.new(url.host, url.port)
       http.use_ssl = true if url.scheme == 'https'
-      request = Net::HTTP::Get.new("#{url.path}?access_token=#{@access_token}&#{params_to_string(params)}")
+      if type == "get"
+        request = Net::HTTP::Get.new("#{url.path}?access_token=#{@access_token}&#{params_to_string(params)}")
+      elsif type == "post"
+        request = Net::HTTP::Post.new("#{url.path}?access_token=#{@access_token}")
+        request.set_form_data(params)
+      end
       MultiJson.decode(http.request(request).body)
     end
     

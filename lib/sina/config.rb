@@ -9,12 +9,12 @@ module Sina
       @@app_key
     end
     
-    def self.scret_key=(val)
-      @@scret_key = val
+    def self.secret_key=(val)
+      @@secret_key = val
     end
     
-    def self.scret_key
-      @@scret_key
+    def self.secret_key
+      @@secret_key
     end
 
   end

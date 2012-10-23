@@ -9,7 +9,7 @@ This is a minimalistic API implementation, where all function calls goes through
 
   param = {:uid => "blahblah"}
   sina = Sina::Base.new(token)
-  sina.call_method("users/show", param)
+  sina.call_method("get", "users/show", param)
 
 the token should be got by yourself
     
